@@ -4,32 +4,56 @@
   <meta charset="UTF-8">
   <title>Jobs to Be Done in Practice – Worksheet</title>
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; background: #fafafa; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
     .container {
       max-width: 900px;
       margin: 48px auto 70px auto;
       background: #fff;
-      padding: 0;
+      padding: 38px 44px 30px 44px;
       border-radius: 14px;
       box-shadow: 0 4px 24px #eaeaea;
     }
-    .header {
-      background: #ba372a;
-      color: #fff;
-      border-radius: 14px 14px 0 0;
-      padding: 32px 44px 18px 44px;
-      margin-bottom: 0;
+    .top-card {
+      background: #f6f6f6;
+      border-radius: 8px;
+      padding: 20px 24px 18px 24px;
+      margin-bottom: 38px;
+      color: #444;
     }
-    .header h1 { font-size: 2em; margin: 0 0 10px 0; font-weight: bold; letter-spacing: -1px; }
-    .howto {
-      background: #f6f6f6; border-radius: 0 0 8px 8px;
-      padding: 20px 44px 22px 44px; margin-bottom: 36px; font-size: 1.05em; color: #444;
+    h1 {
+      color: #ba372a;
+      font-size: 2em;
+      font-weight: bold;
+      margin: 0 0 10px 0;
+      letter-spacing: -1px;
     }
-    .section { padding: 0 44px 0 44px; }
-    h3 { color: #1b4b7d; font-size: 1.25em; margin: 36px 0 12px 0; font-weight: bold; }
-    h4 { color: #1b4b7d; font-size: 1.06em; margin: 23px 0 7px 0; font-weight: bold; }
-    table { width: 100%; border-collapse: collapse; font-size: 1em; margin-bottom: 14px; }
-    th, td { padding: 8px 6px; border: 1px solid #e0e0e0; }
+    h3 {
+      color: #1b4b7d;
+      font-size: 1.25em;
+      margin: 36px 0 12px 0;
+      font-weight: bold;
+    }
+    h4 {
+      color: #1b4b7d;
+      font-size: 1.06em;
+      margin: 23px 0 7px 0;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1em;
+      margin-bottom: 14px;
+    }
+    th, td {
+      padding: 8px 6px;
+      border: 1px solid #e0e0e0;
+    }
     th { background: #f6f6f6; font-weight: bold; }
     td input, td textarea {
       font-family: Arial, Helvetica, sans-serif;
@@ -42,23 +66,31 @@
       box-sizing: border-box;
     }
     td textarea { min-height: 38px; resize: vertical; }
-    .export-area { padding: 32px 44px 38px 44px; text-align: left; }
-    .export-instr { color: #6a6a6a; font-size: 1.06em; margin-bottom: 13px; margin-top: 4px; font-weight: normal; text-align: left; }
+    .export-area {
+      padding: 30px 0 0 0;
+      text-align: left;
+    }
+    .export-instr {
+      color: #6a6a6a;
+      font-size: 1.06em;
+      margin-bottom: 13px;
+      margin-top: 4px;
+      font-weight: normal;
+      text-align: left;
+    }
     .export-btn {
       background:#ba372a; color:#fff; font-size:1.13em;
       padding:13px 36px; border:none; border-radius:6px;
       font-family:Arial,Helvetica,sans-serif; cursor:pointer;
       margin-top: 0; display: inline-block; text-align: left;
     }
-    @media (max-width: 900px) { .container, .header, .howto, .section, .export-area { padding-left: 4vw; padding-right: 4vw; } }
+    @media (max-width: 900px) { .container { padding: 18px 3vw; } }
   </style>
 </head>
 <body>
 <div class="container">
-  <div class="header">
+  <div class="top-card">
     <h1>Putting Jobs to Be Done into Practice</h1>
-  </div>
-  <div class="howto">
     <b style="color:#1b4b7d;">How to use</b>
     <ol style="margin:0; padding-left:24px;">
       <li>Work through the three-step JTBD process below. Fill in all fields in detail.</li>
@@ -69,86 +101,84 @@
     </ol>
   </div>
 
-  <div class="section">
-    <h3>1. JTBD Statement Crafting</h3>
-    <div style="margin-bottom:10px;">Draft three-layered job statements (Functional, Emotional, Social) for your key segment, using customer language. Each must use the format: <b>When... I want... so I can...</b></div>
-    <table>
-      <tr>
-        <th>Type</th>
-        <th>JTBD Statement (When... I want... so I can...)</th>
-        <th>Evidence / Data</th>
-        <th>Quote or Context</th>
-      </tr>
-      <tr>
-        <td>Functional</td>
-        <td><textarea id="jtbd_func_statement" placeholder="e.g. When I am out of laundry detergent, I want it to refill automatically so I can always have clean clothes."></textarea></td>
-        <td><textarea id="jtbd_func_evidence" placeholder="e.g. Persona data, survey, Statista"></textarea></td>
-        <td><textarea id="jtbd_func_quote" placeholder="e.g. 'I always run out at the worst time.'"></textarea></td>
-      </tr>
-      <tr>
-        <td>Emotional</td>
-        <td><textarea id="jtbd_emo_statement" placeholder="e.g. When I'm stressed about chores, I want my laundry handled so I can relax."></textarea></td>
-        <td><textarea id="jtbd_emo_evidence" placeholder="e.g. Interview, social listening"></textarea></td>
-        <td><textarea id="jtbd_emo_quote" placeholder="e.g. 'Laundry is overwhelming.'"></textarea></td>
-      </tr>
-      <tr>
-        <td>Social</td>
-        <td><textarea id="jtbd_soc_statement" placeholder="e.g. When friends visit, I want fresh laundry so I can feel confident."></textarea></td>
-        <td><textarea id="jtbd_soc_evidence" placeholder="e.g. Focus group, competitor review"></textarea></td>
-        <td><textarea id="jtbd_soc_quote" placeholder="e.g. 'I feel judged if things are messy.'"></textarea></td>
-      </tr>
-    </table>
+  <h3>1. JTBD Statement Crafting</h3>
+  <div style="margin-bottom:10px;">Draft three-layered job statements (Functional, Emotional, Social) for your key segment, using customer language. Each must use the format: <b>When... I want... so I can...</b></div>
+  <table>
+    <tr>
+      <th>Type</th>
+      <th>JTBD Statement (When... I want... so I can...)</th>
+      <th>Evidence / Data</th>
+      <th>Quote or Context</th>
+    </tr>
+    <tr>
+      <td>Functional</td>
+      <td><textarea id="jtbd_func_statement" placeholder="e.g. When I am out of laundry detergent, I want it to refill automatically so I can always have clean clothes."></textarea></td>
+      <td><textarea id="jtbd_func_evidence" placeholder="e.g. Persona data, survey, Statista"></textarea></td>
+      <td><textarea id="jtbd_func_quote" placeholder="e.g. 'I always run out at the worst time.'"></textarea></td>
+    </tr>
+    <tr>
+      <td>Emotional</td>
+      <td><textarea id="jtbd_emo_statement" placeholder="e.g. When I'm stressed about chores, I want my laundry handled so I can relax."></textarea></td>
+      <td><textarea id="jtbd_emo_evidence" placeholder="e.g. Interview, social listening"></textarea></td>
+      <td><textarea id="jtbd_emo_quote" placeholder="e.g. 'Laundry is overwhelming.'"></textarea></td>
+    </tr>
+    <tr>
+      <td>Social</td>
+      <td><textarea id="jtbd_soc_statement" placeholder="e.g. When friends visit, I want fresh laundry so I can feel confident."></textarea></td>
+      <td><textarea id="jtbd_soc_evidence" placeholder="e.g. Focus group, competitor review"></textarea></td>
+      <td><textarea id="jtbd_soc_quote" placeholder="e.g. 'I feel judged if things are messy.'"></textarea></td>
+    </tr>
+  </table>
 
-    <h3>2. Job Importance & Satisfaction Scoring</h3>
-    <div style="margin-bottom:10px;">Score each job on <b>Importance</b> (how much the customer wants this job done) and <b>Satisfaction</b> (how well current options meet the need). The highest gap = best opportunity.</div>
-    <table>
-      <tr>
-        <th>Type</th>
-        <th>Importance<br>(1–10)</th>
-        <th>Satisfaction<br>(1–10)</th>
-        <th>Opportunity Gap</th>
-      </tr>
-      <tr>
-        <td>Functional</td>
-        <td><input id="jtbd_func_importance" type="number" min="1" max="10" oninput="updateGap('func')"></td>
-        <td><input id="jtbd_func_satisfaction" type="number" min="1" max="10" oninput="updateGap('func')"></td>
-        <td><input id="jtbd_func_gap" type="text" readonly style="background:#f6f6f6; color:#1b4b7d;"></td>
-      </tr>
-      <tr>
-        <td>Emotional</td>
-        <td><input id="jtbd_emo_importance" type="number" min="1" max="10" oninput="updateGap('emo')"></td>
-        <td><input id="jtbd_emo_satisfaction" type="number" min="1" max="10" oninput="updateGap('emo')"></td>
-        <td><input id="jtbd_emo_gap" type="text" readonly style="background:#f6f6f6; color:#1b4b7d;"></td>
-      </tr>
-      <tr>
-        <td>Social</td>
-        <td><input id="jtbd_soc_importance" type="number" min="1" max="10" oninput="updateGap('soc')"></td>
-        <td><input id="jtbd_soc_satisfaction" type="number" min="1" max="10" oninput="updateGap('soc')"></td>
-        <td><input id="jtbd_soc_gap" type="text" readonly style="background:#f6f6f6; color:#1b4b7d;"></td>
-      </tr>
-    </table>
-    <div style="margin:14px 0 22px 0;">
-      <b>Which job presents the highest opportunity? Why?</b><br>
-      <textarea id="jtbd_priority_justification" style="width:100%; min-height:44px;" placeholder="Explain why you chose your highest-priority job for concept development. Refer to your evidence, scores, and customer context."></textarea>
-    </div>
-
-    <h3>3. Translate the Job to Outcomes & Value Proposition</h3>
-    <div style="margin-bottom:10px;">For your highest-priority job, translate it into:</div>
-    <ul style="margin-top:0;">
-      <li>A measurable outcome (what would success look like for the customer?)</li>
-      <li>A draft value proposition (how will your concept deliver progress?)</li>
-    </ul>
-    <table>
-      <tr>
-        <th>Measurable Outcome</th>
-        <th>Draft Value Proposition</th>
-      </tr>
-      <tr>
-        <td><textarea id="jtbd_outcome" placeholder="e.g. 24/7 laundry access, 98% satisfaction, zero detergent run-outs"></textarea></td>
-        <td><textarea id="jtbd_valueprop" placeholder="e.g. Smart-refill guarantees never running out, giving peace of mind"></textarea></td>
-      </tr>
-    </table>
+  <h3>2. Job Importance & Satisfaction Scoring</h3>
+  <div style="margin-bottom:10px;">Score each job on <b>Importance</b> (how much the customer wants this job done) and <b>Satisfaction</b> (how well current options meet the need). The highest gap = best opportunity.</div>
+  <table>
+    <tr>
+      <th>Type</th>
+      <th>Importance<br>(1–10)</th>
+      <th>Satisfaction<br>(1–10)</th>
+      <th>Opportunity Gap</th>
+    </tr>
+    <tr>
+      <td>Functional</td>
+      <td><input id="jtbd_func_importance" type="number" min="1" max="10" oninput="updateGap('func')"></td>
+      <td><input id="jtbd_func_satisfaction" type="number" min="1" max="10" oninput="updateGap('func')"></td>
+      <td><input id="jtbd_func_gap" type="text" readonly style="background:#f6f6f6; color:#1b4b7d;"></td>
+    </tr>
+    <tr>
+      <td>Emotional</td>
+      <td><input id="jtbd_emo_importance" type="number" min="1" max="10" oninput="updateGap('emo')"></td>
+      <td><input id="jtbd_emo_satisfaction" type="number" min="1" max="10" oninput="updateGap('emo')"></td>
+      <td><input id="jtbd_emo_gap" type="text" readonly style="background:#f6f6f6; color:#1b4b7d;"></td>
+    </tr>
+    <tr>
+      <td>Social</td>
+      <td><input id="jtbd_soc_importance" type="number" min="1" max="10" oninput="updateGap('soc')"></td>
+      <td><input id="jtbd_soc_satisfaction" type="number" min="1" max="10" oninput="updateGap('soc')"></td>
+      <td><input id="jtbd_soc_gap" type="text" readonly style="background:#f6f6f6; color:#1b4b7d;"></td>
+    </tr>
+  </table>
+  <div style="margin:14px 0 22px 0;">
+    <b>Which job presents the highest opportunity? Why?</b><br>
+    <textarea id="jtbd_priority_justification" style="width:100%; min-height:44px;" placeholder="Explain why you chose your highest-priority job for concept development. Refer to your evidence, scores, and customer context."></textarea>
   </div>
+
+  <h3>3. Translate the Job to Outcomes & Value Proposition</h3>
+  <div style="margin-bottom:10px;">For your highest-priority job, translate it into:</div>
+  <ul style="margin-top:0;">
+    <li>A measurable outcome (what would success look like for the customer?)</li>
+    <li>A draft value proposition (how will your concept deliver progress?)</li>
+  </ul>
+  <table>
+    <tr>
+      <th>Measurable Outcome</th>
+      <th>Draft Value Proposition</th>
+    </tr>
+    <tr>
+      <td><textarea id="jtbd_outcome" placeholder="e.g. 24/7 laundry access, 98% satisfaction, zero detergent run-outs"></textarea></td>
+      <td><textarea id="jtbd_valueprop" placeholder="e.g. Smart-refill guarantees never running out, giving peace of mind"></textarea></td>
+    </tr>
+  </table>
 
   <div class="export-area">
     <div class="export-instr">Remember to Export or Print before closing.</div>
